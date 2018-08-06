@@ -1,0 +1,9 @@
+<h1>Hello</h1>
+
+<ul>
+<% todos.forEach((todo) => { %>
+<li>
+<a href="/<%= todo.id %>"><%= todo.title %> </a>
+</li>
+<% }) %>
+</ul>

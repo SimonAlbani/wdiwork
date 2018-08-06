@@ -1,0 +1,19 @@
+body {
+  font-family: "Indie Flower", cursive;
+  background-image: url("/images/background.jpg");
+  color: white;
+}
+
+form,
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}

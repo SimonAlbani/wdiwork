@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+    <ul>
+        <% quotes.forEach(function(quote) { %>
+            <li>
+                <span>
+                    "
+                    <%= quote.text %>"
+                </span>
+                <span>
+                    -
+                    <%= quote.author %>
+                </span>
+            </li>
+            <% }); %>
+    </ul>
+
+    <h3>Now you can enter your own!</h3>
+    <form action="/quotes" method="post">
+        <input type="text" placeholder="author" name="author">
+        <input type="text" placeholder="type quote here" name="text">
+        <input type="submit">
+    </form>
+    </body>
+
+    </html>
